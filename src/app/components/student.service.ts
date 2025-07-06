@@ -12,9 +12,9 @@ export class StudentService {
   constructor(private http:HttpClient) { }
 
   getAll():Observable<Student[]>{
-    return this.http.get<Student[]>('http://3.15.221.143:3737/student/get');
+    return this.http.get<Student[]>('http://54.86.76.166:3737/student/get');
   }
   saveStudent(student: Student):Observable<string>{
-    return this.http.post('http://3.15.221.143:3737/student/save',student,{responseType:'text'});
+    return this.http.post('http://54.86.76.166:3737/student/save',student,{responseType:'text'});
   }
 }

@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { Student } from '../Student';
 import { StudentService } from '../student.service';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-student-registration',
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,HttpClientModule],
   templateUrl: './student-registration.component.html',
   styleUrl: './student-registration.component.css'
 })
