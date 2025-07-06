@@ -15,6 +15,6 @@ export class StudentService {
     return this.http.get<Student[]>('http://3.15.221.143:3737/student/get');
   }
   saveStudent(student: Student):Observable<string>{
-    return this.http.post('http://3.15.221.143:3737/student/get',student,{responseType:'text'});
+    return this.http.post('http://3.15.221.143:3737/student/save',student,{responseType:'text'});
   }
 }
