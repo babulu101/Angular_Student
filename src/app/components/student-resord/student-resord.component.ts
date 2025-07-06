@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Student } from '../Student';
 import { StudentService } from '../student.service';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-student-resord',
-  imports: [CommonModule,HttpClientModule],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './student-resord.component.html',
   styleUrl: './student-resord.component.css'
 })
